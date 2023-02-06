@@ -38,6 +38,18 @@
 }
 
 
+
+/* DARK THEME VARIABLES */
+.dark-theme-variables{
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffe;
+  --color-dark-variant: #23bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light)
+}
+
+
 html{
   font-size: 14px;
 }
@@ -574,7 +586,7 @@ main .recent-orders a{
     display: none;
   }
 
-  aside .logo h3{
+  aside .sidebar h3{
     display: none;
   }
 
@@ -636,6 +648,13 @@ main .recent-orders a{
     height: 100vh;
     padding-right: var(--card-padding);
     display: none;
+    animation: showMenu 400ms ease forwards;
+  }
+
+  @keyframes showMenu {
+    to{
+      left: 0;
+    }
   }
 
   aside .logo{
